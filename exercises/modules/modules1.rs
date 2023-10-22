@@ -1,7 +1,6 @@
 // modules1.rs
-//
-// Execute `rustlings hint modules1` or use the `hint` watch subcommand for a
-// hint.
+// Execute `rustlings hint modules1` or use the `hint` watch subcommand for a hint.
+
 
 mod sausage_factory {
     // Don't let anybody outside of this module see this!
@@ -9,7 +8,7 @@ mod sausage_factory {
         String::from("Ginger")
     }
 
-   pub fn make_sausage() {
+    pub fn make_sausage() {
         get_secret_recipe();
         println!("sausage!");
     }

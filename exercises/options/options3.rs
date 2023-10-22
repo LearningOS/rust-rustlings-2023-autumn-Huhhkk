@@ -1,7 +1,6 @@
 // options3.rs
-//
-// Execute `rustlings hint options3` or use the `hint` watch subcommand for a
-// hint.
+// Execute `rustlings hint options3` or use the `hint` watch subcommand for a hint.
+
 
 struct Point {
     x: i32,
@@ -13,7 +12,7 @@ fn main() {
 
     match y {
         Some(ref p) => println!("Co-ordinates are {},{} ", p.x, p.y),
-        _ => panic!("no match!"),
+        _ => println!("no match"),
     }
     y; // Fix without deleting this line.
 }

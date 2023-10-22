@@ -1,15 +1,11 @@
 // clippy3.rs
-// 
 // Here's a couple more easy Clippy fixes, so you can see its utility.
-// No hints.
 
 
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<()> = None;
-    if my_option.is_none() {
-        println!("What's in my_option is: {:#?}", my_option);
-    }
+    if let Some(x) = my_option {}
 
     let my_arr = &[
         -1, -2, -3,

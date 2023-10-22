@@ -5,10 +5,11 @@
 // Execute `rustlings hint tests4` or use the `hint` watch subcommand for a
 // hint.
 
+// I AM NOT DONE
 
 struct Rectangle {
-    pub width: i32,
-    pub height: i32
+    width: i32,
+    height: i32
 }
 
 impl Rectangle {
@@ -37,17 +38,13 @@ mod tests {
     #[should_panic]
     fn negative_width() {
         // This test should check if program panics when we try to create rectangle with negative width
-        std::panic::catch_unwind(|| {
         let _rect = Rectangle::new(-10, 10);
-        }).unwrap();
     }
 
     #[test]
     #[should_panic]
     fn negative_height() {
         // This test should check if program panics when we try to create rectangle with negative height
-        std::panic::catch_unwind(|| {
         let _rect = Rectangle::new(10, -10);
-    }).unwrap();
     }
 }
