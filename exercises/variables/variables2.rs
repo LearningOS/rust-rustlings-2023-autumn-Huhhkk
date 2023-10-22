@@ -4,7 +4,7 @@
 // hint.
 
 fn main() {
-    let x: usize = 0;
+    let x = 0;
     if x == 10 {
         println!("x is ten!");
     } else {
