@@ -4,7 +4,7 @@
 // hint.
 
 fn main() {
-    call_me(2);
+    call_me(0);
 }
 
 fn call_me(num: u32) {

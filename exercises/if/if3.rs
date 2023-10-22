@@ -10,7 +10,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     } else if animal == "snake" {
         3
     } else {
-        0
+       0
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
@@ -27,6 +27,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     habitat
 }
 
+// No test changes needed.
 #[cfg(test)]
 mod tests {
     use super::*;
